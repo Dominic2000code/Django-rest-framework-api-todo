@@ -7,7 +7,7 @@ from .models import Todo
 class TodoModelTest(TestCase):
 
     @classmethod
-    def setUpClass(cls):
+    def setUpTestData(cls):
         Todo.objects.create(title='first todo', body='a body here')
 
     def test_title_content(self):
